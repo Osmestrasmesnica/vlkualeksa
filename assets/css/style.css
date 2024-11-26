@@ -338,7 +338,7 @@ section {
   height: 3px;
   background: #149ddd;
   bottom: 0;
-  left: calc(50% - 20px);
+  left: calc(50% - 25px);
 }
 
 .section-title h2::before {

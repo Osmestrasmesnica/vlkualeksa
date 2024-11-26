@@ -68,7 +68,7 @@
       <div id="particles-js"></div>
     <div class="hero-container" data-aos="fade-in">
       <h1>Aleksa Vlku</h1>
-      <p>I'm <span class="typed" data-typed-items="Data Scientist, Data Analyst, Project Manager, Web Developer, PhD Biologist, Research Assistant, Cyclist, Hiker"></span></p>
+      <p>I'm <span class="typed" data-typed-items="DevOps Engineer, Data Scientist, Data Analyst, Project Manager, Web Developer, PhD Biologist, Research Assistant, Marketing Consultant, Cyclist, Hiker"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -85,20 +85,22 @@
           <div class="col-lg-4" data-aos="fade-right" style="display: flex; justify-content: center;align-items: center">
             <img src="assets/img/profile-img-mirror.jpg" class="img-fluid" alt="">
           </div>
+          <!-- TODO Napraviti ovde Harmonika menu, ovako ima puno teksta -->
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Hi there, i am Aleksa</h3>
             <p>
               Currently a Research Assistant at the University of Novi Sad, Faculty of Sciences, I specialize in sophisticated statistical analyses, including variance analysis and correlation assessments. My master's research focused on revealing significant trait variations and interrelationships among populations of orchids, providing valuable insights into their morphological diversity and distribution.
             </p>
             <p>
-              As a Data Scientist with a track record of leveraging statistical analysis (and machine learning algorithms), I excel in extracting meaningful insights from complex datasets. With over 4 years of experience, I specialize in translating business requirements into analytical solutions, driving data-driven strategies that optimize processes and enhance decision-making. I assist companies and researchers in analyzing and visualizing their datasets, covering various data-science steps such as <b>data pre-processing</b>, application of <b>statistical methods</b>, data <b>visualization</b> and results communication.
+              As a Data Scientist with a track record of leveraging statistical analysis, I excel in extracting meaningful insights from complex datasets. With over 4 years of experience, I specialize in translating business requirements into analytical solutions, driving data-driven strategies that optimize processes and enhance decision-making. I assist companies and researchers in analyzing and visualizing their datasets, covering various data-science steps such as <b>data pre-processing</b>, application of <b>statistical methods</b>, data <b>visualization</b> and results communication.
             </p>
             <p>
               With a background in project management, I have successfully led multiple projects from inception to completion, ensuring timely delivery and high-quality results. I excel in coordinating teams, setting project timelines, and overseeing project budgets. This experience complements my data science expertise, enabling me to plan and execute projects that meet organizational goals effectively.
             </p>
             <p>I am available for short-term projects and part-time longer-term engagements.</p>   
-            <div style="display: flex; justify-content: center;">
+            <div style="display: flex; justify-content: center; gap: 3rem">
               <a href="#contact" class="btn btn-outline-primary">CONTACT ME</a>   
+              <a href="#CV" class="btn btn-primary">DOWNLOAD CV</a>   
             </div>
           </div>
         </div>
@@ -106,14 +108,13 @@
       </div>
     </section><!-- End About Section -->
 
-    <!--TODO Srediti redosled i brojeve -->
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Strong command of Python programming for data manipulation and analysis. Knowledgeable in machine learning algorithms and their applications.</p>
+          <p>Strong command of Python programming for data manipulation and analysis.</p>
         </div>
 
         <div class="row skills-content">
@@ -128,16 +129,16 @@
             </div>
 
             <div class="progress">
-              <span class="skill">SQL <i class="val">90%</i></span>
+              <span class="skill">SQL <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Data Visualization (Matplotlib, Seaborn) <i class="val">75%</i></span>
+              <span class="skill">Data Visualization (Matplotlib, Seaborn) <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -148,19 +149,19 @@
             <div class="progress">
               <span class="skill">Web Development (HTML/CSS/JS) <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Python <i class="val">90%</i></span>
+              <span class="skill">Python <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Machine Learning <i class="val">55%</i></span>
+              <span class="skill">DevOps(GCP) <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -177,142 +178,265 @@
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container">
-
+    
         <div class="section-title">
           <h2>Resume</h2>
           <p>"Strive not to be a success, but rather to be of value." - Albert Einstein</p>
         </div>
+    
+        <div class="accordion" id="resumeAccordion">
+    
+          <!-- Education Section -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="educationHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapse" aria-expanded="true" aria-controls="educationCollapse">
+                Education
+              </button>
+            </h3>
+            <div id="educationCollapse" class="accordion-collapse collapse show" aria-labelledby="educationHeading" data-bs-parent="#resumeAccordion">
+              <div class="accordion-body">
+                  <div class="resume-item">
+                      <h4>PhD in Biological Sciences</h4>
+                      <h5>2020 - 2024</h5>
+                      <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
+                      <p>I am currently pursuing my PhD in Biology at the University of Novi Sad. I expect to graduate in early October 2025 with a thesis titled 'Diversity and distribution of taxa of the Orchidaceae family in the region of Eastern Serbia." I actively participate in collaborative projects, contributing to project writing, design, organization, and implementation. These projects offers valuable hands-on experience in ecological surveys and botanical studies, enhancing my skills in research methodology and data analysis. Additionally, I am involved in the execution of practical teaching activities, where I assist in designing and delivering field-based and laboratory educational sessions. This role has significantly improved my communication skills, as it requires explaining complex scientific concepts in a clear and engaging manner to diverse audiences. It has also strengthened my teamwork, adaptability, and organizational abilities, all of which are essential soft skills for both academic and professional environments. 
+                      </p>
+                    </div>
+                    <div class="resume-item">
+                      <h4>Master in Biology</h4>
+                      <h5>2019 - 2020</h5>
+                      <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
+                      <p>The findings from my Master's thesis, titled "Morphological Variability of the Orchis pauciflora Ten. 1812 (Orchidoideae, Orchidaceae) in the Central Part of the Balkan Peninsula," not only enriched our understanding of the morphological traits of this species but also demonstrated my proficiency in data analysis techniques. Through meticulous analysis, I uncovered discrepancies in certain traits compared to existing literature and unearthed previously undocumented morphometric data. This analytical approach mirrors the methodologies employed in data science, where insights are gleaned from complex datasets. Moreover, the statistical analyses I conducted, including variance analysis and correlation assessments, underscored significant trait variations and interrelationships among populations, akin to the exploratory data analysis techniques central to data science.</p>
+                    </div>
+                    <div class="resume-item">
+                      <h4>Bachelor with honours in Biology</h4>
+                      <h5>2014 - 2019</h5>
+                      <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
+                      <p>During my Bachelor's studies, I developed a strong foundation in biological sciences, delving into diverse subjects such as molecular biology, ecology, and botany. Alongside rigorous coursework, I engaged in fieldwork across various terrains, gaining practical experience in ecological surveys and botanical studies. These field expeditions complemented my laboratory analyses and research paper writing, providing a holistic understanding of biological systems. This academic journey laid the groundwork for my further studies and research pursuits in the field of biology and data science.</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Certifications Section -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="certificationsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certificationsCollapse" aria-expanded="false" aria-controls="certificationsCollapse">
+                Certifications
+              </button>
+            </h3>
+            <div id="certificationsCollapse" class="accordion-collapse collapse" aria-labelledby="certificationsHeading" data-bs-parent="#resumeAccordion">
+              <div class="accordion-body">
+                  <div class="resume-item">
+                      <h4>100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP</h4>
+                      <h5>Date of Completion: April, 2024, Does not expire</h5>
+                      <p><em>Certificate Of Completion, Udemy </em></p>
+                      <ul>
+                        <li>Completed 100 Days of Code Challenge by Angela Yu</li>
+                        <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
+                        <p>Link to Certificate: <a href="https://www.udemy.com/certificate/UC-9277b90c-36a5-4cff-ad65-0f5e0385bcad/" target="_blank" rel="noopener noreferrer">[Certificate Link]</a></p>
+                      </ul>
+                    </div>
+                    <div class="resume-item">
+                      <h4>CS50's Introduction to Database with SQL</h4>
+                      <h5>Date of Completion: September, 2024, Does not expire</h5>
+                      <p><em>CS50 Certificat, Cambridge, Massachusetts </em></p>
+                      <ul>
+                        <li>Completed CS50's Introduction to Database with SQL by David J. Malan</li>
+                        <li>Uploaded the code written and projects built for each chapter to my repository on GitHub. </li>
+                        <p>Link to Certificate: <a href="https://cs50.harvard.edu/certificates/d89608fd-78f5-48ff-b6b2-8c25c03a1979" target="_blank" rel="noopener noreferrer">[Certificate Link]</a></p>
+                      </ul>
+                    </div>  
+                                <!-- <div class="resume-item">
+            <h4>Data Analyst Nanodegree</h4>
+            <h5>Date of Completion: [Date]</h5>
+            <p><em>Certificate Of Completion, Udacity </em></p>
+            <ul>
+              <li>Completed Data Analyst Nanodegree on Udacity.</li>
+              <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
+              <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Full Stack Web Development Nanodegree</h4>
+            <h5>Date of Completion: [Date]</h5>
+            <p><em>Certificate Of Completion, Udacity </em></p>
+            <ul>
+              <li>Completed Full Stack Web Development Nanodegree on Udacity.</li>
+              <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
+              <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Project Management Professional (PMP) Certification</h4>
+            <h5>Date of Completion: [Date]</h5>
+            <p><em>Certificate Of Completion, Project Management Institute (PMI) </em></p>
+            <ul>
+              <li>Completed Full Stack Web Development Nanodegree Program on Udacity.</li>
+              <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
+              <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
+            </ul>
+          </div> -->        
+              </div>
+            </div>
+          </div>
+    
+          <!-- Research and Academic Experience -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="experienceHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experienceCollapse" aria-expanded="false" aria-controls="experienceCollapse">
+                  Research and Academic Experience
+              </button>
+            </h3>
+            <div id="experienceCollapse" class="accordion-collapse collapse" aria-labelledby="experienceHeading" data-bs-parent="#resumeAccordion">
+              <div class="accordion-body">
+                  <div class="resume-item">
+                      <h4>Research Assistant</h4>
+                      <h5>2022 - Present</h5>
+                      <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB </em></p>
+                      <ul>
+                        <li>Engaged in research both in the laboratory and field settings, gaining hands-on experience in biological studies.</li>
+                        <li>Conducted tutorial sessions for pharmacy students on the systematics of higher plants.</li>
+                        <li>Actively participated in, wrote, organized, and implemented several projects annually. </li>
+                        <li>Pursuing a Ph.D. with a focus on diversity and distribution of taxa of the Orchidaceae family in the region of Eastern Serbia.</li>
+                      </ul>
+                    </div>
+                    <div class="resume-item">
+                      <h4>Research Trainee</h4>
+                      <h5>2020 - 2022</h5>
+                      <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
+                      <ul>
+                        <li>Conducted field research and performed laboratory analyses to investigate ecological phenomena.</li>
+                        <li>Contributed to 5 research projects, collaborating with interdisciplinary teams to achieve project objectives.</li>
+                        <li>Participated in 7 national and international conferences, presenting research findings and engaging with peers in the scientific community.</li>
+                        <li>Facilitated practical sessions for ecology students, providing hands-on learning experiences and guidance in ecological research methods and techniques.</li>
+                      </ul>
+                    </div>
+                    <div class="resume-item">
+                      <h4>Marketing team</h4>
+                      <h5>2024 - present</h5>
+                      <p><em>University of Novi Sad, Faculty of Sciences, Department of Biology and Ecology, Novi Sad, SRB</em></p>
+                      <ul>
+                        <li>Collaborated on promoting biological sciences through outreach programs, school visits, and participation in scientific fairs and conferences.</li>
+                        <li>Developed a variety of marketing materials including logos, brochures, infographics, presentations, and advertisements.</li>
+                        <li>Represented the University of Novi Sad at various scientific and educational events, fostering awareness of biological sciences among diverse audiences.</li>
+                        <li>Organized and participated in community engagement initiatives aimed at increasing interest in biology among students and the public.</li>
+                        <li>Developed engaging campaigns to showcase the Faculty of Sciences' contributions to the field of biology, targeting both academic and general audiences.</li>
+                      </ul>
+                    </div>          
+              </div>
+            </div>
+          </div>
+    
+          <!-- IT and Technology Experience -->
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="additionalHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#additionalCollapse" aria-expanded="false" aria-controls="additionalCollapse">
+                  IT and Technology Experience
+              </button>
+            </h3>
+            <div id="additionalCollapse" class="accordion-collapse collapse" aria-labelledby="additionalHeading" data-bs-parent="#resumeAccordion">
+              <div class="accordion-body">
+                <div class="resume-item">
+                  <h4>Project Manager and Data Analyst</h4>
+                  <h5>2022 - Present</h5>
+                  <p><em>Tzar, Belgrade, SRB</em></p>
+                  <ul>
+                    <li>Led a team in analyzing large datasets to derive actionable insights.</li>
+                    <li>Managed multiple projects simultaneously, ensuring timely delivery and high-quality results.</li>
+                    <li>Collaborated with cross-functional teams to develop data-driven strategies for business growth and optimization.</li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <h4>DevOps and Cloud Computing Enthusiast</h4>
+                  <h5>Self-Initiated | Ongoing</h5>
+                  <ul>
+                    <li>Deployed and managed scalable cloud infrastructure using Docker and Google Cloud Platform (GCP).</li>
+                    <li>Automated CI/CD pipelines with GitHub Actions, including secure SSH key management and deployment workflows.</li>
+                    <li>Optimized blockchain observer nodes in archive mode, focusing on storage, troubleshooting, and system reliability.</li>
+                    <li>Streamlined application builds and deployments using PM2 and TypeScript configuration enhancements.</li>
+                  </ul>
+                </div>
+                
+                <div class="resume-item">
+                  <h4>Freelance Web Developer</h4>
+                  <h5>2020 - present</h5>
+                  <p><em>Various Projects</em></p>
+                  <ul>
+                    <li>Improved project management and client communication skills while delivering customized solutions on time and within budget.</li>
+                    <li>Specialized in responsive design, ensuring functionality across all devices and platforms.</li>
+                    <li>Developed the following websites, showcasing advanced skills in web design, coding, and user experience:
+                      <ul>
+                        <li>
+                          <strong>Portfolio Site</strong>: Modern portfolio showcasing my skills in HTML5, CSS3, JavaScript, Bootstrap, and Python for backend functionality. 
+                          <a href="https://osmestrasmesnica.github.io/vlkualeksa/" target="_blank" rel="noopener noreferrer">[View Site]</a>
+                        </li>
+                        <li>
+                          <strong>WLQ Map App</strong>: Data visualization tool with advanced filtering for mapping botanical data in UTM grids. Part of my PhD research. 
+                          <a href="https://osmestrasmesnica.github.io/wlqmapapp/" target="_blank" rel="noopener noreferrer">[View App]</a>
+                        </li>
+                        <li>
+                          <strong>IPSILON Srbija</strong>: Fully custom NGO website developed using HTML, CSS, JavaScript, and Python. 
+                          <a href="https://ipsilonsrbija.rs/" target="_blank" rel="noopener noreferrer">[View Site]</a>
+                        </li>
+                        <li>
+                          <strong>Serbian Society London</strong>: Site for non-political unincorporated association in London using WordPress. 
+                          <a href="https://serbiansociety.org.uk/" target="_blank" rel="noopener noreferrer">[View Site]</a>
+                        </li>
+                        <li>
+                          <strong>Digitalna Gospodjetina</strong>: Minimalistic blog site with a striking black and red theme. 
+                          <a href="https://digitalnagospodjetina.webflow.io/" target="_blank" rel="noopener noreferrer">[View Site]</a>
+                        </li>
+                        <li>
+                          <strong>Pijaca na Klik</strong>: E-commerce website created with WebFlow. 
+                          <a href="https://pijaca-na-klik.webflow.io/" target="_blank" rel="noopener noreferrer">[View Site]</a>
+                        </li>
+                        <li>
+                          <strong>Anton WLQ Jewelry</strong>: Online store for jewelry, created using WebFlow. 
+                          <a href="https://anton-wlq-jewelery.webflow.io/" target="_blank" rel="noopener noreferrer">[View Site]</a>
+                        </li>
+    
+                      </ul>
+                    </li>
+    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>PhD in Biological Sciences</h4>
-              <h5>2020 - 2024</h5>
-              <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
-              <p>I am currently pursuing my PhD in Biology at the University of Novi Sad. I expect to graduate in early October 2025 with a thesis titled 'Diversity and distribution of taxa of the Orchidaceae family in the region of Eastern Serbia." I actively participate in collaborative projects, contributing to project writing, design, organization, and implementation. These projects offers valuable hands-on experience in ecological surveys and botanical studies, enhancing my skills in research methodology and data analysis.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Master in Biology</h4>
-              <h5>2019 - 2020</h5>
-              <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
-              <p>The findings from my Master's thesis, titled "Morphological Variability of the Orchis pauciflora Ten. 1812 (Orchidoideae, Orchidaceae) in the Central Part of the Balkan Peninsula," not only enriched our understanding of the morphological traits of this species but also demonstrated my proficiency in data analysis techniques. Through meticulous analysis, I uncovered discrepancies in certain traits compared to existing literature and unearthed previously undocumented morphometric data. This analytical approach mirrors the methodologies employed in data science, where insights are gleaned from complex datasets. Moreover, the statistical analyses I conducted, including variance analysis and correlation assessments, underscored significant trait variations and interrelationships among populations, akin to the exploratory data analysis techniques central to data science.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor with honours in Biology</h4>
-              <h5>2014 - 2019</h5>
-              <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
-              <p>During my Bachelor's studies, I developed a strong foundation in biological sciences, delving into diverse subjects such as molecular biology, ecology, and botany. Alongside rigorous coursework, I engaged in fieldwork across various terrains, gaining practical experience in ecological surveys and botanical studies. These field expeditions complemented my laboratory analyses and research paper writing, providing a holistic understanding of biological systems. This academic journey laid the groundwork for my further studies and research pursuits in the field of biology and data science.</p>
-            </div>
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <h4>100 DAYS OF CODE: THE COMPLETE PYTHON PRO BOOTCAMP</h4>
-              <h5>Date of Completion: [Date], Does not expire</h5>
-              <p><em>Certificate Of Completion, Udemy </em></p>
-              <ul>
-                <li>Completed 100 Days of Code Challenge by Angela Yu.</li>
-                <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
-                <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Analyst Nanodegree</h4>
-              <h5>Date of Completion: [Date]</h5>
-              <p><em>Certificate Of Completion, Udacity </em></p>
-              <ul>
-                <li>Completed Data Analyst Nanodegree on Udacity.</li>
-                <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
-                <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Full Stack Web Development Nanodegree</h4>
-              <h5>Date of Completion: [Date]</h5>
-              <p><em>Certificate Of Completion, Udacity </em></p>
-              <ul>
-                <li>Completed Full Stack Web Development Nanodegree on Udacity.</li>
-                <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
-                <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Project Management Professional (PMP) Certification</h4>
-              <h5>Date of Completion: [Date]</h5>
-              <p><em>Certificate Of Completion, Project Management Institute (PMI) </em></p>
-              <ul>
-                <li>Completed Full Stack Web Development Nanodegree Program on Udacity.</li>
-                <li>Uploaded the code written and projects built on each day to my repository on GitHub. </li>
-                <p>Link to Certificate: <a href="#">[Certificate Link]</a></p>
-              </ul>
-            </div>
+          <!-- Other experience  -->
+          <div class="accordion-item">
+              <h3 class="accordion-header" id="otherHeading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#otherCollapse" aria-expanded="false" aria-controls="otherCollapse">
+                      Other Experience
+                  </button>
+              </h3>
+              <div id="otherCollapse" class="accordion-collapse collapse" aria-labelledby="otherHeading" data-bs-parent="#resumeAccordion">
+                  <div class="accordion-body">
+                      <div class="resume-item">
+                          <h4>Founder and Director of NGO "CUR/CAD"</h4>
+                          <h5>2021 - present</h5>
+                          <p><em>Novi Sad, Vojvodina, SRB</em></p>
+                          <ul>
+                            <li>Founded and directed NGO "CUR/CAD," overseeing the conceptualization, organization, and implementation of X national and X regional projects aimed at environmental conservation and community development</li>
+                            <li>Conducted data analysis on project activities, generating insights and creating visualizations to facilitate decision-making and project evaluation.</li>
+                            <li>Spearheaded fundraising efforts and grant applications to secure funding for project initiatives and operational sustainability.</li>
+                            <li>Collaborated with stakeholders, including government agencies, local communities, and partner organizations, to foster partnerships and maximize project impact.</li>
+                            <li>Developed educational materials and conducted workshops and training sessions to raise awareness and build capacity in environmental conservation and sustainable development practices.</li>
+                            <li>Developed and maintained the organization's <a href="https://ipsilonsrbija.rs">website</a>, ensuring regular updates and relevant content delivery to stakeholders.</li> 
+                            <!--TODO Ubaciti glavni sajt CUR/CAD a ne od Ipsilon   -->
+                          </ul>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Project Manager and Data Analyst</h4>
-              <h5>2022 - Present</h5>
-              <p><em>Tzar, Belgrade, SRB</em></p>
-              <ul>
-                <li>Led a team in analyzing large datasets to derive actionable insights.</li>
-                <li>Managed multiple projects simultaneously, ensuring timely delivery and high-quality results.</li>
-                <li>Utilized advanced statistical techniques and machine learning algorithms to optimize decision-making processes. </li>
-                <li>Collaborated with cross-functional teams to develop data-driven strategies for business growth and optimization.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Research Assistant</h4>
-              <h5>2022 - Present</h5>
-              <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB </em></p>
-              <ul>
-                <li>Engaged in research both in the laboratory and field settings, gaining hands-on experience in biological studies.</li>
-                <li>Conducted tutorial sessions for pharmacy students on the systematics of higher plants.</li>
-                <li>Actively participated in, wrote, organized, and implemented several projects annually. </li>
-                <li>Pursuing a Ph.D. with a focus on diversity and distribution of taxa of the Orchidaceae family in the region of Eastern Serbia.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Research Trainee</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>University of Novi Sad, Faculty of Sciences, Novi Sad, SRB</em></p>
-              <ul>
-                <li>Conducted field research and performed laboratory analyses to investigate ecological phenomena.</li>
-                <li>Contributed to 5 research projects, collaborating with interdisciplinary teams to achieve project objectives.</li>
-                <li>Participated in 7 national and international conferences, presenting research findings and engaging with peers in the scientific community.</li>
-                <li>Facilitated practical sessions for ecology students, providing hands-on learning experiences and guidance in ecological research methods and techniques.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Marketing team</h4>
-              <h5>2024 - present</h5>
-              <p><em>University of Novi Sad, Faculty of Sciences, Department of Biology and Ecology, Novi Sad, SRB</em></p>
-              <ul>
-                <li>Collaborated on promoting biological sciences through outreach programs, school visits, and participation in scientific fairs and conferences.</li>
-                <li>Developed a variety of marketing materials including logos, brochures, infographics, presentations, and advertisements.</li>
-                <li>Represented the University of Novi Sad at various scientific and educational events, fostering awareness of biological sciences among diverse audiences.</li>
-                <li>Organized and participated in community engagement initiatives aimed at increasing interest in biology among students and the public.</li>
-                <li>Developed engaging campaigns to showcase the Faculty of Sciences' contributions to the field of biology, targeting both academic and general audiences.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Founder and Director of NGO "CUR/CAD"</h4>
-              <h5>2021 - present</h5>
-              <p><em>Novi Sad, Vojvodina, SRB</em></p>
-              <ul>
-                <li>Founded and directed NGO "CUR/CAD," overseeing the conceptualization, organization, and implementation of X national and X regional projects aimed at environmental conservation and community development</li>
-                <li>Conducted data analysis on project activities, generating insights and creating visualizations to facilitate decision-making and project evaluation.</li>
-                <li>Spearheaded fundraising efforts and grant applications to secure funding for project initiatives and operational sustainability.</li>
-                <li>Collaborated with stakeholders, including government agencies, local communities, and partner organizations, to foster partnerships and maximize project impact.</li>
-                <li>Developed educational materials and conducted workshops and training sessions to raise awareness and build capacity in environmental conservation and sustainable development practices.</li>
-                <li>Developed and maintained the organization's <a href="https://ipsilonsrbija.rs">website</a>, ensuring regular updates and relevant content delivery to stakeholders.</li> 
-                <!--TODO Ubaciti glavni sajt CUR/CAD a ne od Ipsilon   -->
-              </ul>
-            </div>
-          </div>
+          
         </div>
-
+    
       </div>
-    </section><!-- End Resume Section -->
+    </section>
+<!-- End Resume Section -->
 
     <!--TODO Dodati Witcher, Master rezultate, 1 projekat iz kursa i jos jedan dobar sa YT -->
     <!-- ======= Portfolio Section ======= -->
@@ -321,108 +445,110 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Explore a diverse portfolio showcasing my academic research, data analytics projects, web applications, and software development. Each project reflects my expertise and passion for innovation and design.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-data">Data Analytics</li> <!-- TODO .filter srediti-->
+              <li data-filter=".filter-biology">Biology related</li> <!-- TODO .filter srediti-->
+              <li data-filter=".filter-sql">SQL Projects</li> <!-- TODO .filter srediti-->
+              <li data-filter=".filter-app">App Development</li> <!-- TODO .filter srediti-->
+              <li data-filter=".filter-web">Web Development</li> <!-- TODO .filter srediti-->
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Anton Wlq Jewelery - Custom Design Jewelry _ Create Your Own Unique Piece Our Jewelry Studio.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/Anton Wlq Jewelery - Custom Design Jewelry _ Create Your Own Unique Piece Our Jewelry Studio.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Digitalna gospođetina - sigurna, hrabra, važna, odvažna.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/Digitalna gospođetina - sigurna, hrabra, važna, odvažna.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/IpsilonSrbija.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/IpsilonSrbija.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Pijaca na klik.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/Pijaca na klik.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-biology">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/WLQ-MAP-APP.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/WLQ-MAP-APP.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Serbian courses for adults – Serbian Society.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Serbian courses for adults – Serbian Society.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/witcher.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/witcher.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sql">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> <!-- TODO napraviti stranice za ove stvari-->
               </div>
             </div>
           </div>
