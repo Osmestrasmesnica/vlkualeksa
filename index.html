@@ -599,7 +599,7 @@
 
           <!--TODO Srediti ovo da bude kao iz kursa  -->
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contact-form" action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -666,7 +666,10 @@
   <!-- scripts -->
   <script src="particles.js"></script>
   <script src="app.js"></script>
-
+  
+  <!-- emailjs form -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="forms/contact.js"></script>
 </body>
 
 </html>
